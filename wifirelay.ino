@@ -7,7 +7,7 @@ IPAddress ip(192, 168, 1, 85);
 IPAddress gateway(192, 168, 1, 1);
 IPAddress subnet(255, 255, 255, 0); 
 
-int realyPin = D5;
+int relayPin = D5;
 WiFiServer server(85);
  
 void setup() {
@@ -15,8 +15,8 @@ void setup() {
   delay(10);
  
  
-  pinMode(realyPin, OUTPUT);
-  digitalWrite(realyPin, HIGH);
+  pinMode(relayPin, OUTPUT);
+  digitalWrite(relayPin, HIGH);
  
   // Connect to WiFi network
   Serial.println();
@@ -77,9 +77,9 @@ void loop() {
  
   // Match the request
   if (request.indexOf("/open") != -1) {
-    digitalWrite(realyPin, LOW);
+    digitalWrite(relayPin, LOW);
     delay(500);
-    digitalWrite(realyPin, HIGH);
+    digitalWrite(relayPin, HIGH);
   } 
  
  
@@ -108,87 +108,3 @@ void loop() {
   Serial.println("");
  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-//#include <ESP8266WiFi.h>
-//#include <WiFiClient.h>
-//#include <ESP8266WebServer.h>
-//
-//// Replace with your network credentials
-//const char* ssid = "SMART HOME | ZAMIR";
-//const char* password = "MiladZoom4410!@#$";
-//
-//ESP8266WebServer server(80);   //instantiate server at port 80 (http port)
-//
-//String page = "";
-//int realyPin = D5;
-//
-//void setup(void){
-//  pinMode(realyPin, OUTPUT);
-//  digitalWrite(realyPin, HIGH);
-//
-//  page = "<!DOCTYPE HTML><html><head><meta charset='utf-8'>"
-//  "<meta name='viewport' content='width=device-width, initial-scale=1'>"
-//  "<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>"
-//  "<meta charset='utf-8'>"
-//  "<title>FBI open up!</title></head><body>"
-//  "<div class='container'><div class='row'><div class='col-12 text-center'>"
-//  "<p style='margin: 30px auto;color: red; font-size: 20px'>درب باز کن هوشمند</p>"
-//  "<div><a style='margin: 30px auto' href='/open' class='btn btn-success'>باز کردن درب</a></div>"
-//  "</div></div></div></body>";
-//  
-//  delay(1000);
-//  Serial.begin(115200);
-//  
-////  WiFi.config(ip, gateway, subnet);
-//  WiFi.softAP(ssid, password);
-//
-//  Serial.println("");
-//
-//
-//  while (WiFi.status() != WL_CONNECTED) {
-//    delay(500);
-//    Serial.print(".");
-//  }
-//  Serial.println("");
-//  Serial.print("Connected to ");
-//  Serial.println(ssid);
-//  Serial.print("IP address: ");
-//  Serial.println(WiFi.softAPIP()); 
-//   
-//  server.on("/", [](){
-//    server.send(200, "text/html", page);
-//  });
-//  
-//  server.on("/open", [](){
-//    server.send(200, "text/html", page);
-//    digitalWrite(realyPin, LOW);
-//    delay(1000);
-//    digitalWrite(realyPin, HIGH);
-//  });
-//  
-//  server.begin();
-//  Serial.println("Web server started!");
-//}
-// 
-//void loop(void){
-//  server.handleClient();
-//}
