@@ -6,7 +6,7 @@
 
 ### :tada: You get:
 
-![result](./Data/animation.gif.gif =x250)
+![reault](./Data/animation.gif.gif)
 
 ##
 ### :pushpin: Requirements:
