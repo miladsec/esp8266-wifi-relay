@@ -6,7 +6,7 @@
 
 ### :tada: You get:
 
-![reault](https://miladzamir.ir/Data/animation.gif.gif)
+![result](./Data/animation.gif.gif =x250)
 
 ##
 ### :pushpin: Requirements:
