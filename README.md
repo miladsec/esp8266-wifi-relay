@@ -6,7 +6,7 @@
 
 ### :tada: You get:
 
-![reault](./Data/animation.gif)
+![reault](https://github.com/ZAM1R/ESP8266WifiRelay/blob/main/Data/animation.gif)
 
 ##
 ### :pushpin: Requirements:
