@@ -28,8 +28,8 @@
 
 ##
 ### :camera_flash: Tutorial video:
-[link](https://github.com/miladzamir/ESP8266WifiRelay) **(coming soon)**
+[link](https://github.com/miladsec/ESP8266WifiRelay) **(coming soon)**
 
 ##
 ### ContactUs:
-<a href="https://linkedin.com/in/miladzamir" target="blank"><img align="center" src="https://img.icons8.com/color/48/000000/linkedin-circled--v1.png" alt="miladzamir" height="40" width="40"/></a>
+<a href="https://linkedin.com/in/miladsec" target="blank"><img align="center" src="https://img.icons8.com/color/48/000000/linkedin-circled--v1.png" alt="miladsec" height="40" width="40"/></a>
